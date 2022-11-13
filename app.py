@@ -11,7 +11,7 @@ import subprocess
 from midi2audio import FluidSynth
 from pydub import AudioSegment
 #from pydub.playback import play
-
+import fluidsynth
 
 #-------------------------------------------------------------------------------
 # Application principale
