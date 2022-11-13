@@ -6,3 +6,4 @@ scikit-learn==1.1.3
 streamlit==1.14.1
 midi2audio==0.1.1
 pydub==0.25.1
+fluidsynth==0.2
