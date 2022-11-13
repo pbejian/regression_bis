@@ -72,6 +72,21 @@ st.markdown("""
     <hr>
 """, unsafe_allow_html=True)
 
+#-------------------------------------------------------------------------------
+# Sauvegarde des coefficients w et b dans un fichier.
+
+file = open("coeffs.txt", "w")
+file.write(f"{w},{b}")
+file.close()
+
+# Vérifications :
+
+st.write("Contenu du fichier : ")
+file = open("coeffs.txt", "r")
+st.write(file.read())
+file.close()
+
+
 inc.espace(2)
 
 st.write("""
