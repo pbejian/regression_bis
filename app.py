@@ -6,11 +6,28 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import streamlit as st
 import include as inc
+import os
+import subprocess
+
+
+
 
 #-------------------------------------------------------------------------------
 # Application principale
 
 st.title("Régression linéaire")
+
+st.write("""
+    ### Exécution de commandes système (test)
+
+""")
+
+#output = subprocess.check_output("ls -al", Shell=True)
+#st.write(output)
+
+sortie=os.popen("ls -al").readlines() 
+st.write(sortie)
+
 
 st.write("""
     ### Un exemple de régression linéaire (univariée)
