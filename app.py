@@ -10,13 +10,13 @@ import os
 import subprocess
 from midi2audio import FluidSynth
 from pydub import AudioSegment
-from pydub.playback import play
+#from pydub.playback import play
 
 
 #-------------------------------------------------------------------------------
 # Application principale
 
-st.title("Jasac - Jazz Solo Auto Composer")
+st.title("JASAC - Jazz Solo Auto Composer")
 
 st.write("""
     ### Exécution de commandes système y compris audio (test)
